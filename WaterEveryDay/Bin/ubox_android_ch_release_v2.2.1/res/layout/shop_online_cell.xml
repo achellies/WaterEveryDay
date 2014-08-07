@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/chName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="售货机" />
+            <TextView android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/enName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vending Machine" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

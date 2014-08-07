@@ -1,0 +1,6 @@
+version: 1.4.2
+apkFileName: ubox_android_ch_release_v2.2.1.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

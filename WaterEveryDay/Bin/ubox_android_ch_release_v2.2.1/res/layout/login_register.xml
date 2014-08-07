@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/regTxt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="正在获取注册通道 ..." style="@style/txt" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/regTxt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" style="@style/txt" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/ub_submit" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="发送短信" style="@style/bulletInfotxt" />
+    </LinearLayout>
+</LinearLayout>

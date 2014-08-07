@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="20.0dip">
+                <ImageView android:layout_gravity="left|center" android:id="@id/manager_icon" android:background="@drawable/zfb_m" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="right|center" android:id="@id/hasBindText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="已绑定支付宝账户" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/listlayout" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <include android:id="@id/item0" android:visibility="gone" layout="@layout/accountcell" />
+                <ImageView android:id="@id/Line1" android:visibility="gone" style="@style/listItemButtomImage" />
+                <include android:id="@id/item1" android:visibility="gone" layout="@layout/accountcell" />
+                <ImageView android:id="@id/Line2" android:visibility="gone" style="@style/listItemButtomImage" />
+                <include android:id="@id/item2" android:visibility="gone" layout="@layout/accountcell" />
+                <ImageView android:id="@id/Line3" android:visibility="gone" style="@style/listItemButtomImage" />
+                <include android:id="@id/item3" android:visibility="gone" layout="@layout/accountcell" />
+                <ImageView android:id="@id/Line4" android:visibility="gone" style="@style/listItemButtomImage" />
+                <include android:id="@id/item4" android:visibility="gone" layout="@layout/accountcell" />
+            </LinearLayout>
+            <TextView android:id="@id/showText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="&quot;被勾选的为默认支付宝账户&quot;" />
+            <LinearLayout android:orientation="vertical" android:id="@id/checkLayout" android:background="@drawable/bgline" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                <CheckBox android:textColor="@color/labelTxt" android:id="@id/checkBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" 每次询问支付宝密码" />
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/buttonTxt" android:id="@id/btn" android:background="@drawable/bg_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="增加绑定帐户" android:onClick="btnOnClick" />
+            <TextView android:textSize="12.0dip" android:id="@id/showText1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="最多只能绑定5个支付宝账户。如果要绑定其他支付宝账户，请删除一个已绑定的支付宝账户." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

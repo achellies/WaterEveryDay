@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feet" android:background="@color/labelTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/feet_sale" android:background="@drawable/bg_btn_feet_sale_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_btn_feet_sale" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageButton android:id="@id/feet_coupon" android:background="@drawable/bg_btn_feet_coupon_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_btn_feet_coupon" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/buttonTxt" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/feet_notice" android:background="@drawable/bg_notice_feet" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    </FrameLayout>
+    <ImageButton android:id="@id/feet_order" android:background="@drawable/bg_btn_feet_order_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_btn_feet_order" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/feet_counter" android:background="@drawable/bg_btn_feet_counter_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_btn_feet_counter" android:layout_weight="1.0" />
+</LinearLayout>

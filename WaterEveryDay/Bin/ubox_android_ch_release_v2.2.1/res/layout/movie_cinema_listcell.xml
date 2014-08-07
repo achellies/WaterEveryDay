@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textColor="@color/labelTxt" android:id="@id/movieCinemaNameDis" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="万达电影院" android:singleLine="true" android:maxLength="15" />
+            <TextView android:textColor="@color/shengGray" android:id="@id/movieCinemaDistanceDis" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="距离目标地点100米" android:singleLine="true" android:maxLength="25" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+            <TextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@id/movieCinemaValueDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90" android:singleLine="true" />
+            <TextView android:textColor="@color/shengGray" android:id="@id/movieCinemaNDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最低价" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/imageView2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

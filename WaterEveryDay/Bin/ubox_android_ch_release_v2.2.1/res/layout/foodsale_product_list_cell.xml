@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/left" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="3.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgLeft" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/buttonTxt" android:layout_gravity="center" android:id="@id/ubproductTextViewTitleLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/orange" android:layout_gravity="center" android:id="@id/ubproductTextViewPriceLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgLeftBg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/ubproductProgressBarLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mid" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="3.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgMid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/buttonTxt" android:layout_gravity="center" android:id="@id/ubproductTextViewTitleMid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/orange" android:layout_gravity="center" android:id="@id/ubproductTextViewPriceMid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgMidBg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/ubproductProgressBarMid" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="3.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgRight" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/buttonTxt" android:layout_gravity="center" android:id="@id/ubproductTextViewTitleRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/orange" android:layout_gravity="center" android:id="@id/ubproductTextViewPriceRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/ubproductImgRightBg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/ubproductProgressBarRight" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

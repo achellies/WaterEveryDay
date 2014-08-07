@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/head_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:background="@drawable/bg_layout_ub_number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/ubNumberInput" android:background="@drawable/bg_edtext" android:paddingLeft="95.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:hint="在此输入编号" android:singleLine="true" android:shadowRadius="5.0" android:numeric="integer" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:textSize="18.0sp" android:id="@id/yes_bt" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="确定" />
+        </LinearLayout>
+        <ImageView android:id="@id/ubbianhaoImageView" android:background="@color/labelTxt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_imgv_ub_number" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/orderhome" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/bg_layout_ub_number" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="15.0sp" android:textColor="@color/shengGray1" android:layout_gravity="center_vertical" android:id="@id/orderBtnSale" android:background="@drawable/bg_btn_head_sale_order" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="售货机" android:layout_weight="1.0" />
+                <Button android:textSize="15.0sp" android:textColor="@color/shengGray1" android:layout_gravity="center_vertical" android:id="@id/orderBtnFood" android:background="@drawable/bg_btn_head_sale_order" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="盒饭机" android:layout_weight="1.0" />
+                <Button android:textSize="15.0sp" android:textColor="@color/shengGray1" android:layout_gravity="center_vertical" android:id="@id/orderBtnMovie" android:background="@drawable/bg_btn_head_sale_order" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="电影票" android:layout_weight="1.0" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView android:layout_gravity="right|center" android:id="@id/orderImgVArrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <ListView android:id="@id/orderHomeListView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/line3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line3" />
+        <Button android:textColor="@color/shengGray1" android:id="@id/orderMoreBtn" android:background="@color/shineGray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="查看更多订单" />
+        <ImageView android:id="@id/orderHomeLine" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line3" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="17" android:versionName="@string/CLIENT_VERSION" package="com.ub.main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="4" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/app_name" android:name=".LaunchActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="登录" android:name="com.ub.main.login.LoginUI" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" />
+        <activity android:label="友宝在线" android:name="com.ub.main.Hall" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="友宝在线" android:name="com.ub.main.ShopOnline" android:screenOrientation="portrait" />
+        <activity android:label="忘记密码" android:name="com.ub.main.login.ForgetPswPhone" android:screenOrientation="portrait" />
+        <activity android:label="忘记密码" android:name="com.ub.main.login.ForgetPswVerifycode" android:screenOrientation="portrait" />
+        <activity android:label="注册" android:name="com.ub.main.login.RegisterUI" android:screenOrientation="portrait" />
+        <activity android:label="注册" android:name="com.ub.main.login.RegisterMain" android:screenOrientation="portrait" />
+        <activity android:label="账户设置" android:name="com.ub.main.account.AccountMain" android:screenOrientation="portrait" />
+        <activity android:label="绑定手机" android:name="com.ub.main.account.AccountBindPhone" android:screenOrientation="portrait" />
+        <activity android:label="绑定信用卡" android:name="com.ub.main.account.AccountCreditCard" android:screenOrientation="portrait" />
+        <activity android:label="充值" android:name="com.ub.main.account.Recharge" android:screenOrientation="portrait" />
+        <activity android:label="充值" android:name="com.ub.main.account.RechargeActivity" android:screenOrientation="portrait" />
+        <activity android:label="账户明细" android:name="com.ub.main.account.AccountDetail" android:screenOrientation="portrait" />
+        <activity android:label="账户明细" android:name="com.ub.main.account.AccountAbout" android:screenOrientation="portrait" />
+        <activity android:label="账户明细" android:name="com.ub.main.account.Feedback" android:screenOrientation="portrait" />
+        <activity android:label="绑定信用卡" android:name="com.ub.main.account.AccountBindCreditCard" android:screenOrientation="portrait" />
+        <activity android:label="友宝在线" android:name="com.ub.main.ubsale.UbHome" android:screenOrientation="portrait" />
+        <activity android:label="输入编号" android:name="com.ub.main.ubsale.UbNumber" android:screenOrientation="portrait" />
+        <activity android:label="" android:name="com.ub.main.ubsale.UbProduct" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.FoodYudingSuccess" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.FoodProduct" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.FoodBuy" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.BuyWaySelect" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.FoodCouponList" android:screenOrientation="portrait" />
+        <activity android:name="com.ub.main.foodsale.FoodQuHuo" android:screenOrientation="portrait" />
+        <activity android:label="优惠" android:name="com.ub.main.coupon.CouponHome" android:screenOrientation="portrait" />
+        <activity android:label="优惠" android:name="com.ub.main.coupon.CouponInfoDetail" android:screenOrientation="portrait" />
+        <activity android:label="优惠" android:name="com.ub.main.coupon.CouponList" android:screenOrientation="portrait" />
+        <activity android:label="优惠" android:name="com.ub.main.coupon.CouponDetail" android:screenOrientation="portrait" />
+        <activity android:label="购物车" android:name="com.ub.main.ubsale.Coupon_UbBuy" android:screenOrientation="portrait" />
+        <activity android:label="购物车" android:name="com.ub.main.ubsale.UbBuy" android:screenOrientation="portrait" />
+        <activity android:label="" android:name="com.ub.main.ubsale.UbQuHuo" android:screenOrientation="portrait" />
+        <activity android:label="电影票" android:name="com.ub.main.movie.MovieHome" android:screenOrientation="portrait" />
+        <activity android:label="电影票" android:name="com.ub.main.movie.MovieCinema" android:screenOrientation="portrait" />
+        <activity android:label="电影票" android:name="com.ub.main.movie.CinemaSchedule" android:screenOrientation="portrait" />
+        <activity android:label="电影票" android:name="com.ub.main.movie.MovieSeats" android:screenOrientation="portrait" />
+        <activity android:label="电影票" android:name="com.ub.main.movie.MovieBuy" android:screenOrientation="portrait" />
+        <activity android:label="电影预告片" android:name="com.ub.main.movie.MoviePlayer" android:screenOrientation="portrait" />
+        <activity android:label="订单管理" android:name="com.ub.main.order.OrderHome" android:screenOrientation="portrait" />
+        <activity android:label="订单明细" android:name="com.ub.main.order.OrderDetail" android:screenOrientation="portrait" />
+        <activity android:label="U+任务" android:name="com.ub.main.uplus.UBoxPlusMain" android:screenOrientation="portrait" />
+        <activity android:label="U+任务" android:name="com.ub.main.uplus.UBoxPlusCouponSelect" android:screenOrientation="portrait" />
+        <service android:label="APNS Service Demo" android:name="com.apns.APNService">
+            <intent-filter>
+                <action android:name="com.apns.APNService.START" />
+                <action android:name="com.apns.APNService.STOP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.ub.main.apns.APNSBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.apnsd.APNService.NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+</manifest>

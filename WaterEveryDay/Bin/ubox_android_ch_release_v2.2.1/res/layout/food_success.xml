@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/loginwinbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/head_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@color/labelTxt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0sp" android:gravity="left" android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="请在2010-03-01 19：30：00之前取餐。" />
+            <TextView android:textSize="15.0sp" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="温馨提示：" />
+            <TextView android:textSize="15.0sp" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请在指定取餐时段领取您的订餐。" />
+            <TextView android:textSize="15.0sp" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="过期将不能领取，且订餐金额将不予返回。" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:background="@drawable/tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

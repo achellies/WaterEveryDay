@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/buttonTxt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/ubproductImgLeft" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/ubproductProgressBarLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            <ImageView android:id="@id/ubproductImgLeftBg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编号：" android:singleLine="true" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/shengGray1" android:id="@id/bianhao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="200100" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取餐：" android:singleLine="true" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/shengGray1" android:id="@id/qucan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2011.12.02 午餐" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预订：" android:singleLine="true" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/shengGray1" android:id="@id/yuding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2011.11.30" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信息：" android:singleLine="true" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/shengGray1" android:id="@id/xinxi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="宫保鸡丁招牌盖饭" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格：" android:singleLine="true" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/shengGray1" android:id="@id/jiage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="23元" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/operation" android:background="@drawable/btn_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/shengGray1" android:gravity="center" android:id="@id/get" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取餐" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/shengGray1" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="退订" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:id="@id/notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="取餐请以服务器时间为准" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

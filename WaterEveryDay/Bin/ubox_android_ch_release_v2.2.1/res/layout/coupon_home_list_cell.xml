@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/info_icon" android:layout_width="50.0dip" android:layout_height="@dimen/listview_height" android:src="@drawable/icon" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/labelTxt" android:id="@id/info_title" android:text="万达电影院" android:singleLine="true" style="@style/coupon_tv" />
+                    <TextView android:textSize="@dimen/textSizeMID" android:textColor="@color/labelTxt" android:id="@id/info_num" android:text="" android:singleLine="true" style="@style/coupon_tv" />
+                </LinearLayout>
+                <TextView android:id="@id/info_brief" android:text="万达电影院" android:singleLine="true" style="@style/coupon_tv" />
+                <TextView android:id="@id/info_channel" android:text="万达电影院" android:singleLine="true" style="@style/coupon_tv" />
+                <TextView android:id="@id/info_time" android:text="有效时间：2012-00-00" android:singleLine="true" style="@style/coupon_tv" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button android:textColor="@color/buttonTxt" android:layout_gravity="center_vertical" android:id="@id/bnt_get" android:background="@drawable/bg_uboxplus_btn_orange" android:layout_width="72.0dip" android:layout_height="30.0dip" android:text="立即使用" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/img_new_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_coupon_new" />
+    </FrameLayout>
+</LinearLayout>

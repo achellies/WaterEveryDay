@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/youbao_h" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:padding="2.0dip" style="@style/itemContainer">
+                    <LinearLayout style="@style/itemNumContainer">
+                        <TextView android:layout_marginLeft="10.0dip" android:text="账号:" style="@style/txt" />
+                        <EditText android:id="@id/account" android:text="" android:maxLength="65" style="@style/systemInput" />
+                    </LinearLayout>
+                    <ImageView style="@style/listItemButtomImage" />
+                    <LinearLayout style="@style/itemNumContainer">
+                        <TextView android:layout_marginLeft="10.0dip" android:text="密码:" style="@style/txt" />
+                        <EditText android:id="@id/pwd" android:password="true" android:maxLength="65" android:imeOptions="actionDone" style="@style/systemInput" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" style="@style/itemNumContainer">
+                    <CheckBox android:textColor="@color/labelTxt" android:id="@id/learnpwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动登录" />
+                    <TextView android:textColor="@color/darkgreen" android:gravity="right|center" android:id="@id/forgetPW" android:layout_marginLeft="110.0dip" android:text="忘记密码?" style="@style/txt" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                    <Button android:id="@id/regbtn" android:text="短信注册" style="@style/bulletInfotxt" />
+                    <Button android:id="@id/loginbtn" android:text="登录" style="@style/bulletInfotxt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

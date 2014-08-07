@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/head_layout" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/unuseable" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image" android:background="@drawable/big_x" android:layout_marginRight="5.0dip" style="@style/coupon_view" />
+                    <TextView android:textColor="@color/labelTxt" android:id="@id/nouseTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="不使用优惠券" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/selectimage" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/buttonTxt" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:layout_gravity="center_horizontal" android:id="@id/couponlist_listView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:layout_weight="1.0" />
+                <Button android:textColor="@color/shengGray" android:id="@id/getMore" android:background="@drawable/bglinewithoutborder1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="载入更多" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+- <include android:id="@id/head_layout" layout="@layout/mv_head_layout" />
+    <LinearLayout android:background="@color/textBgColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/buttonTxt" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="本服务由网票网提供" android:singleLine="true" />
+    </LinearLayout>
+- <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+- <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <Button android:id="@id/movieCinemaL" android:background="@drawable/buttonbgl" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月9日" android:layout_weight="1.0" />
+            <Button android:id="@id/movieCinemaM" android:background="@drawable/buttonbgm" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月10日" android:layout_weight="1.0" />
+            <Button android:id="@id/movieCinemaR" android:background="@drawable/buttonbgr" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月11日" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/buttonTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <ExpandableListView android:id="@id/mExpandableListView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:indicatorRight="5000.0dip" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+- </LinearLayout>

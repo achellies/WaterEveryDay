@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="fill_horizontal|center" android:orientation="horizontal" android:background="@drawable/bg_uboxplus_titlebar" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSizeBIG" android:textStyle="bold" android:textColor="#ff363636" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部任务" android:singleLine="true" android:shadowColor="#ffd5dce1" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_alignParentLeft="true" />
+    <TextView android:gravity="center" android:id="@id/openOrClose" android:background="@drawable/uplus_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

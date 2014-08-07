@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/imageView" android:background="@drawable/bg_imgv_no_product" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/labelTxt" android:gravity="left|center" android:id="@id/producttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="2011.12.15 今日午餐" android:singleLine="true" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/labelTxt" android:gravity="left|center" android:id="@id/productname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="宫保鸡丁招牌盖饭" android:singleLine="true" android:layout_alignParentLeft="true" />
+                    <TextView android:gravity="left|center" android:id="@id/productprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单价：12.50元" android:singleLine="true" android:layout_alignParentLeft="true" />
+                    <TextView android:gravity="left|center" android:id="@id/productinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原料：鸡肉  黄瓜 花生 大葱" android:singleLine="true" android:layout_alignParentLeft="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/youhuiInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:background="@drawable/bgline_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_gravity="fill_horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/labelTxt" android:id="@id/buyCountTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预订份数" android:singleLine="true" />
+                                <TextView android:textSize="16.0sp" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="1份" android:singleLine="true" />
+                            </LinearLayout>
+                            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/line3" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill_horizontal" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="buyWayClick">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式" android:singleLine="true" />
+                                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/buywayDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="友宝钱包（余15.95元）" android:singleLine="true" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/line3" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                        <LinearLayout android:gravity="center" android:layout_gravity="fill_horizontal" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="HuoDongClick">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/labelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠活动" android:singleLine="true" />
+                                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/promotionTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="15：00以后半价" android:singleLine="true" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/line3" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                        <LinearLayout android:gravity="center" android:layout_gravity="fill_horizontal" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="YouHuiClick">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/labelTxt" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券    " android:singleLine="true" />
+                                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/couponTitle" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="￥1.00代金券" android:singleLine="true" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额:" android:singleLine="true" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="#ffff0000" android:gravity="left|center" android:id="@id/totalMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元 " android:singleLine="true" android:layout_alignParentLeft="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="25.0dip" android:textColor="@color/buttonTxt" android:id="@id/buyBtn" android:background="@drawable/orderbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="5.0dip" android:text="预订" />
+</LinearLayout>

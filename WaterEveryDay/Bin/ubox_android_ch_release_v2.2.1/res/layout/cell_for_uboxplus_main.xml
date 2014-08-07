@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="3.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_cellof_uboxmain_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/appIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                    <TextView android:textSize="@dimen/textSizeMID" android:textStyle="bold" android:textColor="#ff232323" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="乐和彩2.0" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/textSizeSMALL" android:textColor="#ff777777" android:id="@id/appInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专业的购彩平台" android:maxLines="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/grayborder" android:focusable="false" android:clickable="false" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#fff0931f" android:id="@id/appUseCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="989716" android:singleLine="true" />
+                <TextView android:textSize="@dimen/textSizeSMALL" android:textColor="#fff0931f" android:id="@id/appUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人已领取" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/uboxcell_down" android:background="@drawable/bg_cellof_uboxmain_down_yellow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="12.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/textSizeSMALL" android:textStyle="bold" android:textColor="#fff0931f" android:id="@id/appOperator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未激活，点击立即领取激活任务" />
+                    <TextView android:textSize="@dimen/textSizeSMALL" android:textColor="#ff777777" android:id="@id/appCouponInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载并安装乐和彩2.0手机客户端，立即送您友宝可乐优惠券一张！" android:lines="2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/appOpBtn" android:background="@drawable/bg_uboxplus_btn_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即领取" android:shadowColor="#ff59ab59" android:shadowDx="1.0" android:shadowDy="1.0" android:onClick="test" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

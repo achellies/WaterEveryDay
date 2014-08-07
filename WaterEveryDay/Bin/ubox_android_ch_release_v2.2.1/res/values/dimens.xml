@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scrollsize">355.0dip</dimen>
+    <dimen name="scrollbottompadding">0.0dip</dimen>
+    <dimen name="icon_height">67.0dip</dimen>
+    <dimen name="icon_width">64.0dip</dimen>
+    <dimen name="firstline_height">68.0dip</dimen>
+    <dimen name="firstline_paddingTop">1.0dip</dimen>
+    <dimen name="secondline_paddingTop">0.0dip</dimen>
+    <dimen name="acount_manager_middle_height">350.0dip</dimen>
+    <dimen name="main_hall_h">335.0dip</dimen>
+    <dimen name="textSizeBIG">20.0dip</dimen>
+    <dimen name="textSizeMID">15.0dip</dimen>
+    <dimen name="textSizeSMALL">12.0dip</dimen>
+    <dimen name="listview_height">72.0dip</dimen>
+    <dimen name="getButton_marginBottom">10.0dip</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/lv1" android:layout_width="fill_parent" android:layout_height="121.0dip" android:layout_margin="20.0dip" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" style="@style/listBackground" />
+            <ListView android:id="@id/lv2" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="181.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" style="@style/listBackground" />
+            <ListView android:id="@id/lv3" android:layout_width="fill_parent" android:layout_height="121.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" style="@style/listBackground" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/listfenggexian" />
+            <ListView android:id="@id/lv4" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" style="@style/listBackground" />
+            <ListView android:id="@id/lv5" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_margin="20.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

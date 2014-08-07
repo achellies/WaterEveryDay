@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/labelTxt" android:id="@id/youhuiTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预订份数" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/youhuiMoney" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1份（余15份）" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@drawable/small_v" />
+</LinearLayout>

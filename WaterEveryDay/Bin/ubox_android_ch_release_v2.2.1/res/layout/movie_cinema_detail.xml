@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/mv_head_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/shengGray1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/mvCinemaDetailname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="260.0dip" android:text="红楼影院" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:background="@drawable/spot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/shengGray" android:id="@id/mvcinemadetailAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260.0dip" android:text="朝阳区" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="top|center" android:layout_width="280.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <Button android:id="@id/mvCinemaDetailDate1" android:background="@drawable/buttonbgl" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月9日" android:layout_weight="1.0" />
+            <Button android:id="@id/mvCinemaDetailDate2" android:background="@drawable/buttonbgm" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月10日" android:layout_weight="1.0" />
+            <Button android:id="@id/mvCinemaDetailDate3" android:background="@drawable/buttonbgr" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5月11日" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout1" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+        <ListView android:id="@id/mvCinemaDetailList" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:divider="@drawable/line3" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" />
+</LinearLayout>

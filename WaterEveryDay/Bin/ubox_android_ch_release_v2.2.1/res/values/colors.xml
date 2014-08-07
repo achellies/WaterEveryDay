@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loginwinbg">#ffeeeeee</color>
+    <color name="labelTxt">#ff000000</color>
+    <color name="black">#ff000000</color>
+    <color name="logintitlebg">#ff00ff00</color>
+    <color name="grayborder">#ffd9d9d9</color>
+    <color name="buttonTxt">#ffffffff</color>
+    <color name="titleTxt">#ffffffff</color>
+    <color name="buttonBg">#80000000</color>
+    <color name="greenChar">#ffc0d415</color>
+    <color name="orange">#ffffa500</color>
+    <color name="darkgreen">#ff007500</color>
+    <color name="transparent">#99000000</color>
+    <color name="shengGray">#ff999999</color>
+    <color name="shineGray">#ffe9e9e9</color>
+    <color name="shengGray1">#ff4d4c4b</color>
+    <color name="logoGray">#ffeeeeee</color>
+    <color name="textBgColor">#ff555555</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="20.0dip" android:layout_margin="20.0dip" style="@style/itemContainer">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/buy1" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/labelTxt" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值金额： " android:layout_toRightOf="@id/imageView1" />
+                <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/yuan_text" android:text="元" android:layout_alignParentRight="true" style="@style/txt" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffff0000" android:gravity="center_vertical" android:id="@id/textMoney" android:layout_toLeftOf="@id/yuan_text" style="@style/txt" />
+            </RelativeLayout>
+            <LinearLayout android:padding="2.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" style="@style/itemContainer">
+                <RelativeLayout android:layout_marginLeft="10.0dip" style="@style/itemNumContainer">
+                    <TextView android:textSize="15.0sp" android:text="账户：" style="@style/about_left_txt" />
+                    <TextView android:textSize="15.0sp" android:id="@id/text1" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" style="@style/txt" />
+                </RelativeLayout>
+                <ImageView style="@style/listItemButtomImage" />
+                <RelativeLayout android:layout_marginLeft="10.0dip" style="@style/itemNumContainer">
+                    <TextView android:textSize="15.0sp" android:text="余额：" style="@style/about_left_txt" />
+                    <TextView android:textSize="15.0sp" android:id="@id/text2" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" style="@style/txt" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:background="@drawable/goumaibg" android:paddingLeft="20.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="ZFClick">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView1" android:background="@drawable/buy3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Button android:textColor="@color/labelTxt" android:gravity="left" android:layout_gravity="center" android:background="@android:color/transparent" android:clickable="false" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="支付宝购买" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff3c3c3c" android:gravity="left|center" android:id="@id/ZFText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:background="@drawable/goumaibg" android:paddingLeft="20.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="XYKClick">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/buy4" />
+                    <Button android:textColor="@color/labelTxt" android:gravity="left" android:layout_gravity="center" android:background="@android:color/transparent" android:clickable="false" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="信用卡购买" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff3c3c3c" android:gravity="left|center" android:id="@id/XYKText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

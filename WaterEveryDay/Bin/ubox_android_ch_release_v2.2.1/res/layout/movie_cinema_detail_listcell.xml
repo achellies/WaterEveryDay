@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="@color/labelTxt" android:id="@id/mvCinemaDetailTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:15" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/orange" android:id="@id/mvCinemaDetailMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="(90元)" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/labelTxt" android:gravity="center" android:id="@id/mvCinemaDetailTicket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:maxWidth="150.0dip" android:minWidth="90.0dip" android:text="剩余几张" android:singleLine="true" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

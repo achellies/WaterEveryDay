@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="displaySelectBallTitle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="seller_vm">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="seller_large_first" parent="@style/seller_vm">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">60.0</item>
+    </style>
+    <style name="seller_large_second" parent="@style/seller_vm">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="seller_large_third" parent="@style/seller_vm">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="seller_large_third1" parent="@style/seller_large_third">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="seller_img">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="seller_large_img" parent="@style/seller_img">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:layout_weight">7.0</item>
+    </style>
+    <style name="seller_tv">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="seller_tv_name" parent="@style/seller_tv">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6.0sp</item>
+        <item name="android:layout_marginRight">6.0sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="title">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="titleTxt">
+        <item name="android:textColor">@color/titleTxt</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="listItemRightImage">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15.0dip</item>
+        <item name="android:src">@drawable/arrow</item>
+    </style>
+    <style name="listItemMiddleText">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="listItemLeftImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="itemContainer">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bgline</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="itemNumContainer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="subItemContainer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bglinewithoutborder</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+    <style name="listItemButtomImage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/listfenggexian</item>
+    </style>
+    <style name="txt">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="about_left_txt" parent="@style/txt">
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="txtwithmargin" parent="@style/txt">
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="bulletInfotxt" parent="@style/txt">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/buttonTxt</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="bulletInfotxt1" parent="@style/bulletInfotxt">
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="coupon_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="coupon_tv" parent="@style/coupon_view">
+        <item name="android:textSize">@dimen/textSizeSMALL</item>
+        <item name="android:textColor">@color/shengGray</item>
+    </style>
+    <style name="promotion_tv" parent="@style/coupon_view">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/shengGray</item>
+    </style>
+    <style name="moviebutton">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/buttonTxt</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:layout_width">86.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="movieSeatTitleTxt">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/titleTxt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="hmItemInfoLabel" parent="@style/txt">
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="hmItemInfoCon">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="listItem">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="chargetitleLabel">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="systemInput">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="account_bindInput" parent="@style/systemInput">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="cityInput">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="checkBox">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="helpSecondItem">
+        <item name="android:textColor">@color/labelTxt</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="listBackground">
+        <item name="android:background">@drawable/list_background</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:divider">@drawable/listfenggexian</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="xialakuangmiddle">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xialakuangmiddle</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="xialakuangright">
+        <item name="android:paddingRight">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:src">@drawable/xialakuangright</item>
+    </style>
+    <style name="xialakuangleft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/xialakuangleft</item>
+    </style>
+</resources>

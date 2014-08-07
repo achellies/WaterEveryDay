@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="20.0dip" android:baselineAligned="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/image_icon" android:background="@drawable/zfb_m" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:id="@id/linearLayout1" android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开户银行：" style="@style/txt" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/xialakuangleft" />
+                        <Button android:id="@id/bankselect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工商银行" android:onClick="BankSelect" style="@style/xialakuangmiddle" />
+                        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="BankSelect" style="@style/xialakuangright" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/listItemButtomImage" />
+                    <LinearLayout android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:id="@id/firstName" android:text="账户:" style="@style/txt" />
+                        <EditText android:id="@id/firstEditor" android:text="" android:selectAllOnFocus="true" android:maxLength="16" android:digits="0123456789" android:inputType="phone" style="@style/systemInput" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/lastLine" android:visibility="gone" style="@style/listItemButtomImage" />
+                    <LinearLayout android:id="@id/lastLayout" android:paddingLeft="10.0dip" android:visibility="gone" style="@style/itemNumContainer">
+                        <TextView android:id="@id/thirdName" android:text="有  效  期:    " style="@style/txt" />
+                        <EditText android:id="@id/monthEditor" android:layout_width="50.0dip" android:selectAllOnFocus="true" android:maxLength="2" android:digits="0123456789" android:inputType="phone" android:imeOptions="actionNext" style="@style/systemInput" />
+                        <TextView android:id="@id/thirdName" android:text="月" style="@style/txt" />
+                        <EditText android:id="@id/yearEditor" android:layout_width="60.0dip" android:selectAllOnFocus="true" android:maxLength="4" android:digits="0123456789" android:inputType="phone" android:imeOptions="actionNext" style="@style/systemInput" />
+                        <TextView android:id="@id/thirdName" android:text="年" style="@style/txt" />
+                    </LinearLayout>
+                    <ImageView style="@style/listItemButtomImage" />
+                    <LinearLayout android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:id="@id/secondName" android:text="末三位数:" style="@style/txt" />
+                        <EditText android:id="@id/secondEditor" android:selectAllOnFocus="true" android:maxLength="4" android:digits="0123456789" android:inputType="phone" android:imeOptions="actionDone" style="@style/systemInput" />
+                    </LinearLayout>
+                    <ImageView style="@style/listItemButtomImage" />
+                    <LinearLayout android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:text="姓       名：" style="@style/txt" />
+                        <EditText android:id="@id/nameEditor" android:selectAllOnFocus="true" android:maxLength="16" android:imeOptions="actionDone" style="@style/systemInput" />
+                    </LinearLayout>
+                    <ImageView style="@style/listItemButtomImage" />
+                    <LinearLayout android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:text="身份证号：" style="@style/txt" />
+                        <EditText android:id="@id/cardIDEditor" android:selectAllOnFocus="true" android:maxLength="18" android:digits="1234567890x" android:imeOptions="actionDone" style="@style/systemInput" />
+                    </LinearLayout>
+                    <ImageView style="@style/listItemButtomImage" />
+                    <LinearLayout android:paddingLeft="10.0dip" style="@style/itemNumContainer">
+                        <TextView android:text="手机号码：" style="@style/txt" />
+                        <EditText android:id="@id/phoneEditor" android:selectAllOnFocus="true" android:maxLength="11" android:phoneNumber="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/systemInput" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textColor="@color/buttonTxt" android:id="@id/bangding" android:background="@drawable/bg_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="绑定" android:onClick="btnOnClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

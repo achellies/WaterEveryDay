@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/head_layout" />
+    <ScrollView android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:padding="2.0dip" android:layout_margin="20.0dip" style="@style/itemContainer">
+                <LinearLayout style="@style/itemNumContainer">
+                    <TextView android:text="  账户： " style="@style/about_left_txt" />
+                    <TextView android:id="@id/text1" style="@style/txt" />
+                </LinearLayout>
+                <ImageView style="@style/listItemButtomImage" />
+                <LinearLayout style="@style/itemNumContainer">
+                    <TextView android:text="  余额： " style="@style/about_left_txt" />
+                    <TextView android:id="@id/text2" style="@style/txt" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@id/btn1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="余额充值" style="@style/bulletInfotxt" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/head_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bgline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/youhuihomelistImage" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:src="@drawable/youhuiquan" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:id="@id/youhuihomeName" android:text="免费可乐优惠券" android:singleLine="true" style="@style/txt" />
+                <TextView android:gravity="right" android:id="@id/youhuihomePrice" android:text="节省1元" android:singleLine="true" style="@style/coupon_tv" />
+                <TextView android:id="@id/youhuihomelaiyuan" android:text="系统赠送" android:singleLine="true" style="@style/coupon_tv" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/youhuiinfodetailLaiyuan" android:layout_marginTop="10.0dip" android:text=". 系统赠送" style="@style/coupon_tv" />
+        <TextView android:id="@id/youhuiinfodetailDate" android:text=". 有效期至2011年9月10日" style="@style/coupon_tv" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/shengGray1" android:id="@id/youhuiinfodetailExplain" android:layout_marginTop="20.0dip" android:text="说明:" style="@style/coupon_view" />
+        <TextView android:id="@id/youhuiinfodetailExplainChar" android:text="由编辑填写的说明" android:lines="3" style="@style/coupon_tv" />
+    </LinearLayout>
+</LinearLayout>

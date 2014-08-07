@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/buttonTxt" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="@color/labelTxt" android:id="@id/recordName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="支付宝" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/shengGray" android:id="@id/recordDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2011-5-25" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/shengGray" android:id="@id/recordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="20:06:24" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <TextView android:textColor="@color/labelTxt" android:id="@id/recordChongzhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="充值" />
+        <TextView android:textColor="@color/shengGray" android:id="@id/recordMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90" />
+    </LinearLayout>
+</LinearLayout>

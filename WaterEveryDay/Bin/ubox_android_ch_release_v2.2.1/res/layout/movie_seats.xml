@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/head_layout" layout="@layout/mv_head_layout" />
+        <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/colNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                <HorizontalScrollView android:id="@id/hsview" android:padding="0.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hbox" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ub.main.movie.SeatSelector android:id="@id/mv_seatselector" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/selectedPop" android:background="@drawable/bg_seat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="NullClick">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:layout_gravity="bottom|left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="已选择" style="@style/titleTxt" />
+                <TextView android:id="@id/selNum" android:text="2" style="@style/titleTxt" />
+                <TextView android:text="个座位" style="@style/titleTxt" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <TextView android:text="共计" style="@style/titleTxt" />
+                <TextView android:textSize="25.0dip" android:textColor="@color/orange" android:id="@id/money" android:text="190" style="@style/titleTxt" />
+                <TextView android:text="元" style="@style/titleTxt" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/orange" android:id="@id/playTime" style="@style/titleTxt" />
+                    <TextView android:id="@id/mvName" style="@style/titleTxt" />
+                </LinearLayout>
+                <TextView android:id="@id/theater" style="@style/titleTxt" />
+            </LinearLayout>
+            <Button android:layout_gravity="right" android:id="@id/mvSeatOverbutton" android:layout_marginRight="5.0dip" android:text="完成选座" style="@style/moviebutton" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

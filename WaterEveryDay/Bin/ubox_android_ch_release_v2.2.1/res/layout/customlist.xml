@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ub_list_sview" android:background="@drawable/wheel" android:padding="1.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="292.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub_list_vbox" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+    </ScrollView>
+</LinearLayout>

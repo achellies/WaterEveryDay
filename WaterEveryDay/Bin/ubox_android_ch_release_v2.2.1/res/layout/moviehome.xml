@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" android:layout_weight="0.0" layout="@layout/mv_head_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/frameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ub.main.movie.GalleryFlow android:id="@id/gallery_flow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/buttonTxt" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="本服务由网票网提供" android:singleLine="true" />
+            <LinearLayout android:layout_gravity="bottom" android:background="@drawable/rundbuttonbg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/buttonTxt" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/mvhomeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/shineGray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/seekbuttonbg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导演:" />
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/mvhomeState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主演:" />
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/mvhomeActor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类型:" />
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/mvhomeType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="片长:" />
+                <TextView android:textColor="@color/shengGray" android:gravity="left|center" android:id="@id/mvhomeTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="7.0dip">
+            <Button android:textColor="@color/buttonTxt" android:id="@id/mvhomeHerald" android:background="@drawable/buttonbg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="预告片" android:layout_weight="1.0" />
+            <Button android:textColor="@color/buttonTxt" android:id="@id/mvhomeTicket" android:background="@drawable/buttonbg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="在线订票" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/xuline" />
+    </LinearLayout>
+</LinearLayout>

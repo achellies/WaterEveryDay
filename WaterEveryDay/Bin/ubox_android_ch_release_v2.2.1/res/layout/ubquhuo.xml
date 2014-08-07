@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/loginwinbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/head_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@color/labelTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.4">
+        <LinearLayout android:id="@id/linearLayout4" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请点击售货机下方按钮进行取货" />
+        </LinearLayout>
+        <ImageView android:id="@id/ubquhuoAni" android:background="@color/labelTxt" android:layout_width="270.0dip" android:layout_height="120.0dip" android:layout_marginLeft="25.0dip" android:src="@drawable/ub_quhuo" />
+        <LinearLayout android:id="@id/linearLayout3" android:background="@drawable/fivemiao" android:layout_width="270.0dip" android:layout_height="45.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="9.0dip">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/ubquhuoTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="50" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="秒" />
+            <ProgressBar android:id="@id/ubquhuoProgressbar" android:layout_width="200.0dip" android:layout_height="5.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:id="@id/ubquhuoOk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/dibuyuanquan" />
+</LinearLayout>
